@@ -139,7 +139,6 @@ car-sales-prediction-linear-regression/
 ├── README.md
 ├── LICENSE
 └── .gitignore
-
 ```
 
 ---
