@@ -1,56 +1,118 @@
-# Car Sales Prediction – Linear Regression
+# Car Sales Prediction using Linear Regression
 
-## 📌 Overview
+## 📌 Project Overview
 
-Developed a Linear Regression model to predict vehicle sales using
-vehicle characteristics, pricing, fuel efficiency, manufacturer, and
-vehicle type.
+This project uses Linear Regression to predict car sales based on vehicle and pricing-related features.
 
-## 🛠 Tools & Libraries
+The analysis follows an end-to-end data science workflow including data understanding, exploratory data analysis (EDA), data cleaning, categorical variable encoding, feature selection, multicollinearity analysis, model building, prediction, and model evaluation.
+
+## 🎯 Objective
+
+To develop a Linear Regression model that predicts car sales and identify the vehicle characteristics that contribute to sales performance.
+
+## 📊 Dataset
+
+The dataset contains information about different car models and their sales performance.
+
+Key variables include:
+
+- Manufacturer
+- Model
+- Vehicle Type
+- Price
+- Fuel Efficiency
+- Length
+- Sales in Thousands
+
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
-- Statsmodels
+- SciPy
 - Scikit-learn
+- Statsmodels
+- Patsy
+- Excel
 
-## 📊 Methodology
+## 🔎 Analysis Workflow
 
-1. Data Understanding
-2. Exploratory Data Analysis (EDA)
-3. Missing Value Treatment
-4. Outlier Treatment
-5. Categorical Variable Encoding
-6. Feature Selection
-7. Multicollinearity Analysis using VIF
-8. Train-Test Split
-9. Linear Regression Modeling
-10. Model Evaluation
-11. Decile Analysis
-12. Residual Analysis
+### 1. Data Understanding & EDA
 
-## 📈 Business Objective
+- Inspected dataset structure and dimensions
+- Analyzed categorical and numerical variables
+- Checked missing values
+- Examined descriptive statistics
+- Calculated cardinality of categorical variables
+- Analyzed correlations between numerical variables
 
-Predict vehicle sales to support:
+### 2. Data Cleaning
 
-- Demand forecasting
-- Inventory planning
-- Sales planning
-- Business decision-making
+- Treated extreme values using percentile-based clipping
+- Handled missing numerical values using mean imputation
+- Converted categorical variables into dummy variables
 
-## ✅ Model Evaluation
+### 3. Target Variable Transformation
+
+The `Sales_in_thousands` variable was log-transformed to reduce skewness and improve the suitability of the data for regression modeling.
+
+### 4. Feature Selection
+
+Used an F-test to identify statistically significant predictors.
+
+Variables with a p-value below 0.10 were considered for model development.
+
+### 5. Multicollinearity Analysis
+
+Variance Inflation Factor (VIF) was used to identify potential multicollinearity among predictor variables.
+
+### 6. Model Development
+
+The dataset was divided into:
+
+- 70% Training Data
+- 30% Testing Data
+
+Multiple Linear Regression models were developed using Statsmodels.
+
+### 7. Model Evaluation
 
 Model performance was evaluated using:
 
-- R²
-- MAE
-- MAPE
-- MSE
-- RMSE
+- MAE (Mean Absolute Error)
+- MAPE (Mean Absolute Percentage Error)
+- MSE (Mean Squared Error)
+- RMSE (Root Mean Squared Error)
 
-## 📂 Files
+### 8. Decile Analysis
 
-- `Car_Sales_Prediction.ipynb` – Complete analysis and model development
-- `Car_sales.csv` – Dataset
+Decile analysis was performed by ranking predicted sales into ten groups and comparing average actual sales with predicted sales.
+
+### 9. Residual Analysis
+
+Residual analysis was performed to examine model behavior and identify potential limitations of the regression model.
+
+## 📈 Model Features
+
+The final model used the following predictors:
+
+- Fuel Efficiency
+- Vehicle Length
+- Price in Thousands
+- Manufacturer
+- Vehicle Type
+
+## 📁 Repository Structure
+
+```text
+car-sales-prediction-linear-regression/
+│
+├── Car_sales.csv
+├── car_sales_prediction.py
+├── Linear_correlations.xlsx
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
