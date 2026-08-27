@@ -116,3 +116,24 @@ car-sales-prediction-linear-regression/
 ├── README.md
 ├── LICENSE
 └── .gitignore
+
+## 📊 Model Evaluation
+
+The Linear Regression model was evaluated using the following performance metrics:
+
+- MAE (Mean Absolute Error)
+- MAPE (Mean Absolute Percentage Error)
+- MSE (Mean Squared Error)
+- RMSE (Root Mean Squared Error)
+
+The model performance was evaluated on both training and testing datasets.
+
+## ⚠️ Model Limitations
+
+The model may have limitations due to:
+
+- Small dataset size
+- Regression assumptions
+- Possible multicollinearity
+- Limited number of predictive variables
+- Potential overfitting
