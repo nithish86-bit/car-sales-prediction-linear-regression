@@ -86,6 +86,8 @@ Model performance was evaluated using:
 - MSE (Mean Squared Error)
 - RMSE (Root Mean Squared Error)
 
+The model was evaluated on both training and testing datasets.
+
 ### 8. Decile Analysis
 
 Decile analysis was performed by ranking predicted sales into ten groups and comparing average actual sales with predicted sales.
@@ -104,6 +106,27 @@ The final model used the following predictors:
 - Manufacturer
 - Vehicle Type
 
+## 📊 Model Evaluation Metrics
+
+The final model was evaluated using:
+
+| Metric | Description |
+|---|---|
+| MAE | Measures the average absolute prediction error |
+| MAPE | Measures prediction error as a percentage |
+| MSE | Measures the average squared prediction error |
+| RMSE | Measures the square root of the average squared prediction error |
+
+## ⚠️ Model Limitations
+
+The model may have limitations due to:
+
+- Small dataset size
+- Regression assumptions
+- Possible multicollinearity
+- Limited number of predictive variables
+- Potential overfitting
+
 ## 📁 Repository Structure
 
 ```text
@@ -116,24 +139,3 @@ car-sales-prediction-linear-regression/
 ├── README.md
 ├── LICENSE
 └── .gitignore
-
-## 📊 Model Evaluation
-
-The Linear Regression model was evaluated using the following performance metrics:
-
-- MAE (Mean Absolute Error)
-- MAPE (Mean Absolute Percentage Error)
-- MSE (Mean Squared Error)
-- RMSE (Root Mean Squared Error)
-
-The model performance was evaluated on both training and testing datasets.
-
-## ⚠️ Model Limitations
-
-The model may have limitations due to:
-
-- Small dataset size
-- Regression assumptions
-- Possible multicollinearity
-- Limited number of predictive variables
-- Potential overfitting
