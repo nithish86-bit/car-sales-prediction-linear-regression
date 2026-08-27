@@ -108,7 +108,7 @@ The final model used the following predictors:
 
 ## 📊 Model Evaluation Metrics
 
-The final model was evaluated using:
+The final model was evaluated using the following metrics:
 
 | Metric | Description |
 |---|---|
@@ -139,3 +139,13 @@ car-sales-prediction-linear-regression/
 ├── README.md
 ├── LICENSE
 └── .gitignore
+
+---
+
+# 👨‍💻 Author
+
+**Nithish Ramesh**
+
+**GitHub:** https://github.com/nithish86-bit
+
+**LinkedIn:** https://www.linkedin.com/in/nithish-rbn
