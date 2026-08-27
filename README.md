@@ -141,12 +141,13 @@ car-sales-prediction-linear-regression/
 └── .gitignore
 ```
 
----
-
 ## 👨‍💻 Author
 
 **Nithish Ramesh**
 
+**GitHub:** [nithish86-bit](https://github.com/nithish86-bit)
+
+**LinkedIn:** [Nithish Ramesh](https://www.linkedin.com/in/nithish-rbn)
 **GitHub:** [nithish86-bit](https://github.com/nithish86-bit)
 
 **LinkedIn:** [Nithish Ramesh](https://www.linkedin.com/in/nithish-rbn)
