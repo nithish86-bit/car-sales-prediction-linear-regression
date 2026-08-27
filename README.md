@@ -1,30 +1,56 @@
 # Car Sales Prediction – Linear Regression
 
 ## 📌 Overview
-Developed a regression model to forecast car sales using manufacturer, vehicle type, and pricing features.  
-This project demonstrates data cleaning, feature engineering, and regression modeling for predictive analytics.
+
+Developed a Linear Regression model to predict vehicle sales using
+vehicle characteristics, pricing, fuel efficiency, manufacturer, and
+vehicle type.
 
 ## 🛠 Tools & Libraries
-- Python, Pandas, NumPy, Statsmodels, Scikit-learn
-- Seaborn, Matplotlib for visualization
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Statsmodels
+- Scikit-learn
 
 ## 📊 Methodology
-1. Data Cleaning (outlier treatment, missing value imputation)
-2. Feature Engineering (dummy variables for categorical data)
-3. Variable Reduction (F-Regression, VIF)
-4. Linear Regression modeling with train/test split
-5. Model validation using RMSE, MAPE, R²
 
-## ✅ Results
-- Achieved **R² score: 0.87**
-- RMSE validation confirmed forecasting accuracy
-- Insights supported **inventory planning and demand forecasting**
+1. Data Understanding
+2. Exploratory Data Analysis (EDA)
+3. Missing Value Treatment
+4. Outlier Treatment
+5. Categorical Variable Encoding
+6. Feature Selection
+7. Multicollinearity Analysis using VIF
+8. Train-Test Split
+9. Linear Regression Modeling
+10. Model Evaluation
+11. Decile Analysis
+12. Residual Analysis
 
-## 📈 Visuals
-- Regression plots
-- Correlation heatmaps
-- Residual analysis
+## 📈 Business Objective
 
-## 🚀 How to Run
-```bash
-python car_sales_prediction.py
+Predict vehicle sales to support:
+
+- Demand forecasting
+- Inventory planning
+- Sales planning
+- Business decision-making
+
+## ✅ Model Evaluation
+
+Model performance was evaluated using:
+
+- R²
+- MAE
+- MAPE
+- MSE
+- RMSE
+
+## 📂 Files
+
+- `Car_Sales_Prediction.ipynb` – Complete analysis and model development
+- `Car_sales.csv` – Dataset
